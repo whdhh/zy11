@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Whd</title>
+	</head>
+	<body>
+		<div id="start">
+			<input id="SUN" type="text" placeholder="需要复制的文本">
+			<br><br>
+			<button id="copy" onclick="copy()">复制</button>
+			<br><br>
+			<input id="hnog" type="text" placeholder="复制后的文本">
+			<br><br>
+			<span id="hong" style="color:red;"></span>
+		</div>
+	</body>
+	<script>
+		function copy() {
+			var sun = document.getElementById("SUN").value;
+			document.getElementById("hnog").value = sun;
+			document.getElementById("hong").innerHTML = "复制成功!";
+		}
+	</script>
+</html>
